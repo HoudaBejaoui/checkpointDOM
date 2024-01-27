@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html ang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+        <link rel="stylesheet" href="style.css">
+        <title> Shopping Cart</title>
+        <link rel="shortcut icon" href="https://cakesbymk.com/wp-content/uploads/2022/12/Template-Size-for-Blog-Photos-13.jpg" type="image/x-icon">
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <aside class="col-lg-9">
+                    <div class="card">
+                        <div class="table-responsive">
+                            <table class="table table-borderless table-shopping-cart">
+                                <thead class="text-muted">
+                                    <tr class="small text-uppercase">
+                                        <th scope="col">Product</th>
+                                        <th scope="col" width="120">Quantity</th>
+                                        <th scope="col" width="120">Price ($)</th>
+                                        <th scope="col" class="text-right d-none d-md-block" width="200"></th>
+                                    </tr>
+                                </thead>
+                                <tbody id="alltr">
+                                    <tr id="die">
+                                        <td>
+                                            <figure class="itemside align-items-center">
+                                                <div class="aside"><img src="https://stylesweet.com/wp-content/uploads/2023/06/OrangeCreamsicleCupcakes_featured.jpg"
+                                                    class="img-sm">
+                                                </div>
+                                                <figcaption class="info"> <a href="#" class="title text-dark" data-abc="true">Vanilla Cupcakes</a>
+                                                    <p class="text-muted small">filled with vanilla whipped cream <br> covored with vanilla buttercream frosting</p>
+                                                </figcaption>
+                                            </figure>
+                                        </td>
+                                        <td> 
+                                            <div class="col">
+                                                <a id="subst" href="#">-</a><a id="quant" class="border">1</a><a id="addit" href="#">+</a>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="price-wrap"> <var class="price" id="priceI">9</var> </div>
+                                        </td>
+                                        <td class="text-right d-none d-md-block">
+                                            <a data-original-title="Save to Wishlist" title="" href="#" class="btn btn-light" data-toggle="tooltip" data-abc="true" id="heartchange">
+                                                <i class="fa fa-heart" id="heartchange" ></i>
+                                            </a>
+                                            <a href="#" class="btn btn-light" data-abc="true" id="remove"> Remove</a>
+                                        </td>
+                                    </tr>
+                                    <tr id="die">
+                                        <td>
+                                            <figure class="itemside align-items-center">
+                                                <div class="aside"><img src="https://itsybitsykitchen.com/wp-content/uploads/2019/09/cherry-cupcakes.jpg"
+                                                    class="img-sm">
+                                                </div>
+                                                <figcaption class="info">
+                                                    <a href="#" class="title text-dark" data-abc="true">Cherry Cupcakes</a>
+                                                    <p class="text-muted small">filled with maraschino cherries<br> covered with creamy maraschino cherry buttercream </p>
+                                                </figcaption>
+                                            </figure>
+                                        </td>
+                                        <td> 
+                                            <div class="col">
+                                                <a id="subst" href="#">-</a><a id="quant" class="border">1</a><a id="addit" href="#">+</a>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="price-wrap"> <var class="price" id="priceI">15</var> </div>
+                                        </td>
+                                        <td class="text-right d-none d-md-block">
+                                            <a data-original-title="Save to Wishlist" title="" href="#" class="btn btn-light" data-toggle="tooltip" data-abc="true" id="heartchange">
+                                                <i class="fa fa-heart" id="heartchange"></i>
+                                            </a>
+                                            <a href="#" class="btn btn-light btn-round" data-abc="true" id="remove"> Remove</a>
+                                        </td>
+                                    </tr>
+                                    <tr id="die">
+                                        <td>
+                                            <figure class="itemside align-items-center">
+                                                <div class="aside"><img src="https://bakeitwithlove.com/wp-content/uploads/2021/08/Chocolate-Cupcakes-Mary-Berry-sq.jpg"
+                                                    class="img-sm">
+                                                </div>
+                                                <figcaption class="info"> <a href="#" class="title text-dark" data-abc="true">Chocolate Cupcakes</a>
+                                                    <p class="small text-muted">filled with natural cocoa powder and buttermilk <br> covered with  chocolate buttercream </p>
+                                                </figcaption>
+                                            </figure>
+                                        </td>
+                                        <td>
+                                            <div class="col">
+                                                <a id="subst" href="#">-</a><a id="quant" class="border">1</a><a id="addit" href="#">+</a>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="price-wrap"> <var class="price" id="priceI">17</var> </div>
+                                        </td>
+                                        <td class="text-right d-none d-md-block">
+                                            <a data-original-title="Save to Wishlist" title="" href="#" class="btn btn-light" data-toggle="tooltip" data-abc="true" id="heartchange">
+                                                <i class="fa fa-heart "  id="heartchange" ></i>
+                                            </a>
+                                            <a href="#" class="btn btn-light btn-round" data-abc="true" id="remove"> Remove</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </aside>
+                <aside class="col-lg-3">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <form>
+                                <div class="form-group"> <label>Have coupon?</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control coupon" name="" placeholder="-10% WELCOME discount">
+                                        <span class="input-group-append">
+                                            <button class="btn btn-primary btn-apply coupon">Apply</button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <dl class="dlist-align">
+                                <dt>Total items:</dt>
+                                <dd class="text-right ml-3" id="Totalitems">3</dd>
+                            </dl>
+                            <dl class="dlist-align">
+                                <dt>Total price:</dt>
+                                <dd class="text-right ml-3"  id="Totalprice">$34</dd>
+                            </dl>
+                            <dl class="dlist-align">
+                                <dt>Discount:</dt>
+                                <dd class="text-right text-danger ml-3">- 10 %</dd>
+                            </dl>
+                            <dl class="dlist-align">
+                                <dt>Total:</dt>
+                                <dd class="text-right text-dark b ml-3" id="priceD"><strong>$30,6</strong></dd>
+                            </dl>
+                            <hr> <a href="#" class="btn btn-out btn-primary btn-square btn-main" data-abc="true"> Make Purchase </a> <a href="#" class="btn btn-out btn-success btn-square btn-main mt-2" data-abc="true">Continue Shopping</a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+        <script src="script.js" defer></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js" defer></script>
+    </body>
+    
+</html>
