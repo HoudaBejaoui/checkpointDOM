@@ -1,34 +1,51 @@
+<!-- Document declaration and language setting -->
 <!DOCTYPE html>
 <html ang="en">
+    <!-- Head section with metadata and external resource links -->
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
+        <!-- Link to custom stylesheet -->
         <link rel="stylesheet" href="style.css">
+        <!-- Title of the page -->
         <title> Shopping Cart</title>
+        <!-- Shortcut icon for the webpage -->
         <link rel="shortcut icon" href="https://cakesbymk.com/wp-content/uploads/2022/12/Template-Size-for-Blog-Photos-13.jpg" type="image/x-icon">
         
+        <!-- Bootstrap CSS and Font Awesome CSS links -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
+    <!-- Body section for webpage content -->
     <body>
+        <!-- Container for the entire content with Bootstrap fluid layout -->
         <div class="container-fluid">
+            <!-- Row division for main content and sidebar -->
             <div class="row">
+                <!-- Main content area (9 columns wide) -->
                 <aside class="col-lg-9">
+                    <!-- Card for the shopping cart display -->
                     <div class="card">
+                        <!-- Responsive table for shopping cart items -->
                         <div class="table-responsive">
                             <table class="table table-borderless table-shopping-cart">
+                                <!-- Table header with column names -->
                                 <thead class="text-muted">
                                     <tr class="small text-uppercase">
                                         <th scope="col">Product</th>
                                         <th scope="col" width="120">Quantity</th>
                                         <th scope="col" width="120">Price ($)</th>
+                                        <!-- Placeholder for actions column, visible only on medium and larger screens -->
                                         <th scope="col" class="text-right d-none d-md-block" width="200"></th>
                                     </tr>
                                 </thead>
+                                <!-- Table body for displaying individual items -->
                                 <tbody id="alltr">
+                                    <!-- First item row -->
                                     <tr id="die">
+                                        <!-- Item details -->
                                         <td>
                                             <figure class="itemside align-items-center">
                                                 <div class="aside"><img src="https://stylesweet.com/wp-content/uploads/2023/06/OrangeCreamsicleCupcakes_featured.jpg"
@@ -39,22 +56,30 @@
                                                 </figcaption>
                                             </figure>
                                         </td>
+                                        <!-- Quantity column -->
                                         <td> 
                                             <div class="col">
+                                                <!-- Quantity buttons -->
                                                 <a id="subst" href="#">-</a><a id="quant" class="border">1</a><a id="addit" href="#">+</a>
                                             </div>
                                         </td>
+                                        <!-- Price column -->
                                         <td>
                                             <div class="price-wrap"> <var class="price" id="priceI">9</var> </div>
                                         </td>
+                                        <!-- Actions column, visible only on medium and larger screens -->
                                         <td class="text-right d-none d-md-block">
+                                            <!-- Button to save to wishlist -->
                                             <a data-original-title="Save to Wishlist" title="" href="#" class="btn btn-light" data-toggle="tooltip" data-abc="true" id="heartchange">
                                                 <i class="fa fa-heart" id="heartchange" ></i>
                                             </a>
+                                            <!-- Button to remove item from cart -->
                                             <a href="#" class="btn btn-light" data-abc="true" id="remove"> Remove</a>
                                         </td>
                                     </tr>
+                                    <!-- Second item row -->
                                     <tr id="die">
+                                        <!-- Item details -->
                                         <td>
                                             <figure class="itemside align-items-center">
                                                 <div class="aside"><img src="https://itsybitsykitchen.com/wp-content/uploads/2019/09/cherry-cupcakes.jpg"
@@ -66,22 +91,30 @@
                                                 </figcaption>
                                             </figure>
                                         </td>
+                                        <!-- Quantity column -->
                                         <td> 
                                             <div class="col">
+                                                <!-- Quantity buttons -->
                                                 <a id="subst" href="#">-</a><a id="quant" class="border">1</a><a id="addit" href="#">+</a>
                                             </div>
                                         </td>
+                                        <!-- Price column -->
                                         <td>
                                             <div class="price-wrap"> <var class="price" id="priceI">15</var> </div>
                                         </td>
+                                        <!-- Actions column, visible only on medium and larger screens -->
                                         <td class="text-right d-none d-md-block">
+                                            <!-- Button to save to wishlist -->
                                             <a data-original-title="Save to Wishlist" title="" href="#" class="btn btn-light" data-toggle="tooltip" data-abc="true" id="heartchange">
                                                 <i class="fa fa-heart" id="heartchange"></i>
                                             </a>
+                                            <!-- Button to remove item from cart -->
                                             <a href="#" class="btn btn-light btn-round" data-abc="true" id="remove"> Remove</a>
                                         </td>
                                     </tr>
+                                    <!-- Third item row -->
                                     <tr id="die">
+                                        <!-- Item details -->
                                         <td>
                                             <figure class="itemside align-items-center">
                                                 <div class="aside"><img src="https://bakeitwithlove.com/wp-content/uploads/2021/08/Chocolate-Cupcakes-Mary-Berry-sq.jpg"
@@ -92,18 +125,24 @@
                                                 </figcaption>
                                             </figure>
                                         </td>
+                                        <!-- Quantity column -->
                                         <td>
                                             <div class="col">
+                                                <!-- Quantity buttons -->
                                                 <a id="subst" href="#">-</a><a id="quant" class="border">1</a><a id="addit" href="#">+</a>
                                             </div>
                                         </td>
+                                        <!-- Price column -->
                                         <td>
                                             <div class="price-wrap"> <var class="price" id="priceI">17</var> </div>
                                         </td>
+                                        <!-- Actions column, visible only on medium and larger screens -->
                                         <td class="text-right d-none d-md-block">
+                                            <!-- Button to save to wishlist -->
                                             <a data-original-title="Save to Wishlist" title="" href="#" class="btn btn-light" data-toggle="tooltip" data-abc="true" id="heartchange">
                                                 <i class="fa fa-heart "  id="heartchange" ></i>
                                             </a>
+                                            <!-- Button to remove item from cart -->
                                             <a href="#" class="btn btn-light btn-round" data-abc="true" id="remove"> Remove</a>
                                         </td>
                                     </tr>
@@ -112,13 +151,18 @@
                         </div>
                     </div>
                 </aside>
+                <!-- Sidebar area (3 columns wide) -->
                 <aside class="col-lg-3">
+                    <!-- Card for coupon input and application -->
                     <div class="card mb-3">
                         <div class="card-body">
                             <form>
+                                <!-- Form group for coupon input -->
                                 <div class="form-group"> <label>Have coupon?</label>
                                     <div class="input-group">
+                                        <!-- Coupon input field -->
                                         <input type="text" class="form-control coupon" name="" placeholder="-10% WELCOME discount">
+                                        <!-- Button to apply coupon -->
                                         <span class="input-group-append">
                                             <button class="btn btn-primary btn-apply coupon">Apply</button>
                                         </span>
@@ -127,30 +171,37 @@
                             </form>
                         </div>
                     </div>
+                    <!-- Card for displaying total items, total price, discount, and final total -->
                     <div class="card">
                         <div class="card-body">
+                            <!-- List of total items -->
                             <dl class="dlist-align">
                                 <dt>Total items:</dt>
                                 <dd class="text-right ml-3" id="Totalitems">3</dd>
                             </dl>
+                            <!-- List of total price -->
                             <dl class="dlist-align">
                                 <dt>Total price:</dt>
-                                <dd class="text-right ml-3"  id="Totalprice">$34</dd>
+                                <dd class="text-right ml-3"  id="Totalprice">$41</dd>
                             </dl>
+                            <!-- List of discount -->
                             <dl class="dlist-align">
                                 <dt>Discount:</dt>
                                 <dd class="text-right text-danger ml-3">- 10 %</dd>
                             </dl>
+                            <!-- List of final total -->
                             <dl class="dlist-align">
                                 <dt>Total:</dt>
-                                <dd class="text-right text-dark b ml-3" id="priceD"><strong>$30,6</strong></dd>
+                                <dd class="text-right text-dark b ml-3" id="priceD"><strong>$36.9</strong></dd>
                             </dl>
+                            <!-- Horizontal line and buttons for purchase and continue shopping -->
                             <hr> <a href="#" class="btn btn-out btn-primary btn-square btn-main" data-abc="true"> Make Purchase </a> <a href="#" class="btn btn-out btn-success btn-square btn-main mt-2" data-abc="true">Continue Shopping</a>
                         </div>
                     </div>
                 </aside>
             </div>
         </div>
+        <!-- Script tags for linking external JavaScript files -->
         <script src="script.js" defer></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js" defer></script>
     </body>
